@@ -1,2 +1,3 @@
 # data-wrangling-and-analysis
- For this project, i gathered three pieces of data and loaded them in the notebook. The methods used to gather each data was different.  I directly download the WeRateDogs Twitter archive data (twitter_archive_enhanced.csv) which was provided by udacity.com I used the Requests library to download the tweet image prediction (image_predictions.tsv) from a link. I used the Tweepy library to query additional data via the Twitter API and stored this data in newline for each tweet(tweet_json.txt)
+@ ⚠
+work in progress
