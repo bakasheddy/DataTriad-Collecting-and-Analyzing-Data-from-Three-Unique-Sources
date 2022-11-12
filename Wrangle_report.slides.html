@@ -16512,7 +16512,32 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Accessing-data,-cleaning-and-storing-data">Accessing data, cleaning and storing data<a class="anchor-link" href="#Accessing-data,-cleaning-and-storing-data">&#182;</a></h3><ul>
+<h2 id="Dataset-Issues">Dataset Issues<a class="anchor-link" href="#Dataset-Issues">&#182;</a></h2><h4 id="Quality-issues">Quality issues<a class="anchor-link" href="#Quality-issues">&#182;</a></h4><p>these quality issues cuts across all three datasets</p>
+<ul>
+<li>Missing names in name column</li>
+<li>wrong data type of timestamp column</li>
+<li>Null values in expanded_url column</li>
+<li>wrong date type on created_at column</li>
+<li>Null values in in_reply_to_status_id and in_reply_to_user_id columns</li>
+<li>Bad datatype for tweet_id</li>
+<li><p>Bad column names</p>
+<p>#### Tidiness issues</p>
+</li>
+</ul>
+<p>the tidiness issue is also spread across all dataset</p>
+<ul>
+<li>the dog stage is one variable and hence should form single column. But this variable is spread across 4 columns - doggo, floofer, pupper, puppo.</li>
+<li>Information about one type of observational unit (tweets) is spread across three different files/dataframes.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Accessing-data,-cleaning-and-storing-data">Accessing data, cleaning and storing data<a class="anchor-link" href="#Accessing-data,-cleaning-and-storing-data">&#182;</a></h3><p>Each of the quality and tidiness issues were adressed using the methods below</p>
+<ul>
 <li>Here, I checked for data quality and tidiness and it was done both programatically using pandas functions like .info(), .duplicated(), .sample() and through observation of the data</li>
 <li>In tidy data each variable forms a column, each observation forms a row, each type of observational unit forms a table. i made sure all dataframe followed these rules by removing retweets from each dataframe, renaming abigious columns, changing wrong datatypes of entries to their appropraite datatype.</li>
 <li>Before cleaning, a copy of each dataframe's original was made using the .copy() function.</li>
