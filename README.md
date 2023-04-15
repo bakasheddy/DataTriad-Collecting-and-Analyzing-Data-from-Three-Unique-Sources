@@ -1,4 +1,4 @@
-# <center>data-wrangling-and-analysis</center>
+# <center>DataTriad: Collecting and Analyzing Data from Three Unique Sources</center>
 ### <center>by</center>
 ## <center>Shedrack David</center>
 
